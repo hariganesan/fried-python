@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- blog file for hariganesan.com--><html xmlns="http://www.w3.org/1999/xhtml"><head><!-- default header file--><meta name="keywords" content="Hari Ganesan video game software programming development blog portfolio website"><meta name="description" content="Hari Ganesan's website: a blog and portfolio of a software programmer"><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Hari Ganesan</title><link rel="shortcut icon" href="images/favicon.ico"><link href="http://fonts.googleapis.com/css?family=Kreon:400" rel="stylesheet" type="text/css"><link href="css/main.css" rel="stylesheet" type="text/css" media="screen"></head><body class="blue"><div id="header-wrapper"><div id="header" class="container"><div id="logo"><h1><a href="index.html">Hari Ganesan</a></h1></div><div id="menu"><ul><li><a href="index.html">Home</a></li><li><a href="portfolio.html">Portfolio</a></li><li class="current_page_item"><a href="blog.php">Blog</a></li><li><a href="about.html">About</a></li></ul></div></div></div><div id="wrapper"><div id="page" class="container"><div id="content"><div class="post">
+<!DOCTYPE html><!-- blog file for hariganesan.com--><html xmlns="http://www.w3.org/1999/xhtml"><head><!-- default header file--><meta name="keywords" content="Hari Ganesan video game software programming development blog portfolio website"><meta name="description" content="Hari Ganesan's website: a blog and portfolio of a software programmer"><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Hari Ganesan</title><link rel="shortcut icon" href="public/images/favicon.ico"><link href="http://fonts.googleapis.com/css?family=Kreon:400" rel="stylesheet" type="text/css"><link href="public/css/main.css" rel="stylesheet" type="text/css" media="screen"></head><body class="blue"><div id="header-wrapper"><div id="header" class="container"><div id="logo"><h1><a href="/">Hari Ganesan</a></h1></div><div id="menu"><ul><li><a href="/">Home</a></li><li><a href="portfolio">Portfolio</a></li><li class="current_page_item"><a href="blog">Blog</a></li><li><a href="about">About</a></li></ul></div></div></div><div id="wrapper"><div id="page" class="container"><div id="content"><div class="post">
 
 <?
 //check for sql injection attacks
@@ -58,12 +58,12 @@ for ($i=0; $i < $num; $i++) {
 ?>
 <div class="nav"><span "float:left">
 <? if ($currPage > 1) { ?>
-	<a href="blog.php?page=<?=$prevPage;?>">Previous</a>
+	<a href="blog?page=<?=$prevPage;?>">Previous</a>
 <? } ?>
 </span>
 <span style="float:right">
 <? if ($nextPageExists) { ?>
-	<a href="blog.php?page=<?=$nextPage;?>">Next</a>
+	<a href="blog?page=<?=$nextPage;?>">Next</a>
 <? } ?>
 </span>
 </div>
