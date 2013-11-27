@@ -14,23 +14,23 @@ def spitPath(self, path):
 # routes
 class MainPage(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "views/index.html")
+		spitPath(self, "templates/index.html")
 
 class PortfolioPage(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "views/portfolio.html")
+		spitPath(self, "templates/portfolio.html")
 
 class BlogPage(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "views/blog.php")
+		spitPath(self, "templates/blog.php")
 
 class AboutPage(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "views/about.html")
+		spitPath(self, "templates/about.html")
 
 class NotFoundPage(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "views/notfound.html")
+		spitPath(self, "templates/notfound.html")
 
 app = webapp2.WSGIApplication([
 	('/', MainPage),
