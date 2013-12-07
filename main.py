@@ -1,12 +1,14 @@
 from google.appengine.api import urlfetch
 from google.appengine.ext.webapp import template
 
+import os
+import logging
+import sys
+
 # import local libraries
 sys.path.insert(0, 'libs')
 
 import webapp2
-import os
-import logging
 
 
 # spits a path to a request handler
