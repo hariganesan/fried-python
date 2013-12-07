@@ -31,6 +31,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "main.py",
+			"settings":
+			{
+				"buffer_size": 1038,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "appengine_config.py",
+			"settings":
+			{
+				"buffer_size": 149,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.yaml",
+			"settings":
+			{
+				"buffer_size": 292,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -67,6 +91,11 @@
 	},
 	"file_history":
 	[
+		"/Users/Hari/scm/fried-python/views/about.html",
+		"/Users/Hari/scm/fried-python/views/notfound.html",
+		"/Users/Hari/scm/fried-python/views/index.html",
+		"/Users/Hari/scm/fried-python/views/blog.php",
+		"/Users/Hari/scm/fried-python/views/portfolio.html",
 		"/Users/Hari/scm/most-app/server-depr/cron.yaml",
 		"/Users/Hari/scm/most-app/server/api.py",
 		"/Users/Hari/scm/most-app/server-depr/testHTTP.py",
@@ -189,12 +218,7 @@
 		"/Users/Hari/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/Hari/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/Hari/scm/yale-tetris/.gitignore",
-		"/Users/Hari/scm/yale-tetris/yale-tetris",
-		"/Users/Hari/scm/music-visualizer/server/src/UDPServer.java",
-		"/Users/Hari/scm/music-visualizer/server/src/UDPClient.java",
-		"/Users/Hari/scm/music-visualizer/server/src/ServiceThread.java",
-		"/Users/Hari/Documents/Yale/CS445/HW3/queue.h",
-		"/Users/Hari/scm/music-visualizer/README.md"
+		"/Users/Hari/scm/yale-tetris/yale-tetris"
 	],
 	"find":
 	{
@@ -205,6 +229,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Hari/scm/fried-python/views",
 			"/Users/Hari/scm/most-app/web",
 			"/Users/Hari/scm/fried-gator/views",
 			"/Users/Hari/scm/fried-gator/views/posts",
@@ -218,6 +243,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"views",
+			"\"public/",
+			"src=\"images",
+			"href=\"images",
+			"blog.php",
+			"href=\"index\"",
+			"aboutfolio",
+			"aboutport",
+			"blogportfolio",
+			"portfolioportfolio",
+			"indexportfolio",
+			".html",
+			"\"views",
 			"django.utils.simplejson",
 			"simplejson",
 			"logging",
@@ -332,20 +370,7 @@
 			")",
 			"W_",
 			"W",
-			"main",
-			"count",
-			"200",
-			"150",
-			"                      ",
-			"position",
-			"surface",
-			"j",
-			"                      ",
-			"250",
-			"i",
-			"x",
-			"g.",
-			"b"
+			"main"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -353,6 +378,14 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"static/",
+			"src=\"public/images",
+			"href=\"public/images",
+			"blog",
+			"href=\"/\"",
+			"about",
+			"portfolio",
+			"index",
 			"portfolio",
 			"p",
 			"      #push",
@@ -369,8 +402,91 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "appengine_config.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

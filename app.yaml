@@ -10,5 +10,14 @@ handlers:
 - url: .*
   script: main.app
 
+libraries:
+- name: webapp2
+  version: latest
+- name: PIL
+  version: latest
+
+builtins:
+- appstats: on
+
 inbound_services:
 - warmup

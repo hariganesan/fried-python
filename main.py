@@ -1,9 +1,13 @@
-import os
-import webapp2
-import logging
-
 from google.appengine.api import urlfetch
 from google.appengine.ext.webapp import template
+
+# import local libraries
+sys.path.insert(0, 'libs')
+
+import webapp2
+import os
+import logging
+
 
 # spits a path to a request handler
 def spitPath(self, path):
