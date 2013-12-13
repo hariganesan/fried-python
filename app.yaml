@@ -11,9 +11,7 @@ handlers:
   script: main.app
 
 libraries:
-- name: webapp2
-  version: latest
-- name: PIL
+- name: django
   version: latest
 
 builtins:
@@ -21,3 +19,6 @@ builtins:
 
 inbound_services:
 - warmup
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'django_myblog.settings'

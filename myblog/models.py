@@ -10,7 +10,7 @@ class Tag(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=64)
     post_id = models.IntegerField()
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateField(auto_now_add=True)
     body = models.TextField()
     tags = models.ManyToManyField(Tag)
 

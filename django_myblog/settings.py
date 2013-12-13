@@ -12,12 +12,15 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'zfd+zx5lua$vgi=o$efwd&1ecb1z&e^0^0rug3$o4hc8oi0+a7'
+from djangoappengine.settings_base import *
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,14 +33,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'djangoappengine',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myblog.models',
-    'myblog.admin',
+    'myblog',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,7 +56,12 @@ ROOT_URLCONF = 'django_myblog.urls'
 
 WSGI_APPLICATION = 'django_myblog.wsgi.application'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.request',
+)
 
+LOGIN_REDIRECT_URL = '/myblog/'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
