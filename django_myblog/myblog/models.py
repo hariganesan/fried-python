@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
  
 class Tag(models.Model):
 	name = models.CharField(max_length=64)
@@ -15,3 +16,6 @@ class Post(models.Model):
 
     def __unicode__(self):
         return self.title
+
+myModels = [Tag, Post]
+admin.site.register(myModels)

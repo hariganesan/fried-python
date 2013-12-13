@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myblog.models',
+    'myblog.admin',
 )
 
 MIDDLEWARE_CLASSES = (
