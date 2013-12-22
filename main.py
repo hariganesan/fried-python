@@ -8,8 +8,8 @@ import logging
 # import local libraries
 # sys.path.insert(0, 'libs')
 
-from google.appengine.ext import webapp2
-
+import webapp2
+from google.appengine.ext.webapp import template
 
 # spits a path to a request handler
 def spitPath(self, path):
