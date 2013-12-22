@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"django",
+				"django_myblog"
+			],
+			[
+				"dja",
+				"django_myblog"
+			],
+			[
 				"e",
 				"entries"
 			],
@@ -35,38 +43,39 @@
 			"file": "app.yaml",
 			"settings":
 			{
-				"buffer_size": 292,
+				"buffer_size": 327,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "django_myblog/myblog/models.py",
+			"file": "manage.py",
 			"settings":
 			{
-				"buffer_size": 420,
+				"buffer_size": 256,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "django_myblog/myblog/views.py",
+			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 251,
+				"buffer_size": 79,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/blog.php",
+			"file": "django_myblog/settings.py",
 			"settings":
 			{
-				"buffer_size": 3435,
+				"buffer_size": 2310,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "django_myblog/urls.py",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 126,
 				"line_ending": "Unix"
 			}
 		}
@@ -106,7 +115,18 @@
 	},
 	"file_history":
 	[
+		"/Users/Hari/scm/fried-python/myblog/urls.py",
+		"/Users/Hari/scm/fried-python/django_myblog/myblog/models.py",
+		"/Users/Hari/scm/fried-python/django/settings.py",
+		"/Users/Hari/scm/fried-python/django_myblog/myblog/views.py",
+		"/Users/Hari/scm/fried-python/templates/blog.html",
+		"/Users/Hari/scm/fried-python/django_myblog/django_myblog/urls.py",
+		"/Users/Hari/scm/fried-python/django_myblog/django_myblog/wsgi.py",
 		"/Users/Hari/scm/fried-python/main.py",
+		"/Users/Hari/scm/fried-python/django/urls.py",
+		"/Users/Hari/scm/fried-python/django_myblog/django_myblog/settings.py",
+		"/Users/Hari/scm/fried-python/django_myblog/myblog/admin.py",
+		"/Users/Hari/scm/fried-python/static/css/main.css",
 		"/Users/Hari/scm/fried-python/views/about.html",
 		"/Users/Hari/scm/fried-python/views/notfound.html",
 		"/Users/Hari/scm/fried-python/views/index.html",
@@ -222,18 +242,7 @@
 		"/Users/Hari/scm/yale-tetris/README.md",
 		"/Users/Hari/scm/yale-tetris/yale-tetris.sublime-workspace",
 		"/Users/Hari/scm/yale-tetris/test.cpp",
-		"/Users/Hari/scm/yale-tetris/SDL/SDLMain.m",
-		"/Users/Hari/scm/yale-tetris/SDL/SDLMain.h",
-		"/Users/Hari/scm/yale-tetris/SDL/ReadMeDevLite.txt",
-		"/Users/Hari/scm/yale-tetris/Block.cpp",
-		"/Users/Hari/scm/yale-tetris/Block.h",
-		"/Users/Hari/scm/yale-tetris/src/tetris.cpp",
-		"/Users/Hari/scm/yale-tetris/Grid.h",
-		"/Users/Hari/scm/yale-tetris/Grid.cpp",
-		"/Users/Hari/scm/yale-tetris/yale-tetris.sublime-project",
-		"/Users/Hari/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/Hari/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/Hari/scm/yale-tetris/.gitignore"
+		"/Users/Hari/scm/yale-tetris/SDL/SDLMain.m"
 	],
 	"find":
 	{
@@ -244,6 +253,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Hari/scm/fried-python",
 			"/Users/Hari/scm/fried-python/views",
 			"/Users/Hari/scm/most-app/web",
 			"/Users/Hari/scm/fried-gator/views",
@@ -258,6 +268,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"myblog.views.",
+			"models.",
+			"8000",
+			"img",
 			"str",
 			"views",
 			"\"public/",
@@ -381,11 +395,7 @@
 			".",
 			".m",
 			".",
-			"if",
-			",",
-			")",
-			"W_",
-			"W"
+			"if"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -417,7 +427,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -426,15 +436,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 292,
+						"buffer_size": 327,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								239,
-								239
+								206,
+								206
 							]
 						],
 						"settings":
@@ -449,26 +459,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "django_myblog/myblog/models.py",
-					"semi_transient": false,
+					"file": "manage.py",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 420,
+						"buffer_size": 256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								296,
-								296
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -478,19 +486,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "django_myblog/myblog/views.py",
+					"file": "main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 251,
+						"buffer_size": 79,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								37,
+								37
 							]
 						],
 						"settings":
@@ -505,51 +513,53 @@
 				},
 				{
 					"buffer": 3,
-					"file": "templates/blog.php",
-					"semi_transient": true,
+					"file": "django_myblog/settings.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3435,
+						"buffer_size": 2310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								776,
+								776
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 330.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "django_myblog/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								60,
+								60
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
