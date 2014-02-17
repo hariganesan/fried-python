@@ -3,7 +3,11 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "/Users/Hari/scm/fried-python"
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/Hari/scm/wide-eddy"
 		}
 	]
 }

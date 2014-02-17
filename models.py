@@ -1,40 +1,40 @@
 # Hari Ganesan 12/21/13
 # taken from https://github.com/bmc/picoblog
+# or http://brizzled.clapper.org/blog/2008/08/07/writing-blogging-software-for-google-app-engine/
 
 import datetime
 import sys
 
-from google.appengine.ext import ndb
+from google.appengine.ext import db
 
 # If the local platform is 64 bit, just using sys.maxint can cause problems.
 # It will evaluate to a number that's too large for GAE's 32-bit environment.
 # So, force it to a 32-bit number.
 FETCH_THEM_ALL = ((sys.maxint - 1) >> 32) & 0xffffffff
 
-class Article(ndb.Model):
-
-    title = ndb.StringProperty(required=True)
-    body = ndb.TextProperty()
-    published_when = ndb.DateTimeProperty(auto_now_add=True)
-    tags = ndb.ListProperty(ndb.Category)
-    id = ndb.IntegerProperty()
-    draft = ndb.BooleanProperty(required=True, default=False)
+class Article(db.Model):
+    title = db.StringProperty(required=True)
+    body = db.TextProperty()
+    published_when = db.DateTimeProperty(auto_now_add=True)
+    tags = db.ListProperty(db.Category)
+    id = db.IntegerProperty()
+    draft = db.BooleanProperty(required=True, default=False)
 
     @classmethod
     def get_all(cls):
-        q = ndb.Query(Article)
+        q = db.Query(Article)
         q.order('-published_when')
         return q.fetch(FETCH_THEM_ALL)
 
     @classmethod
     def get(cls, id):
-        q = ndb.Query(Article)
+        q = db.Query(Article)
         q.filter('id = ', id)
         return q.get()
 
     @classmethod
     def published_query(cls):
-        q = ndb.Query(Article)
+        q = db.Query(Article)
         q.filter('draft = ', False)
         return q
 
@@ -44,12 +44,10 @@ class Article(ndb.Model):
                       .order('-published_when')\
                       .fetch(FETCH_THEM_ALL)
 
+    # Return all tags, as TagCount objects, optionally sorted by frequency
+    # (highest to lowest).
     @classmethod
     def get_all_tags(cls):
-        """
-        Return all tags, as TagCount objects, optionally sorted by frequency
-        (highest to lowest).
-        """
         tag_counts = {}
         for article in Article.published():
             for tag in article.tags:
@@ -103,10 +101,10 @@ class Article(ndb.Model):
     def convert_string_tags(cls, tags):
         new_tags = []
         for t in tags:
-            if type(t) == ndb.Category:
+            if type(t) == db.Category:
                 new_tags.append(t)
             else:
-                new_tags.append(ndb.Category(unicode(t)))
+                new_tags.append(db.Category(unicode(t)))
         return new_tags
 
     def __unicode__(self):
@@ -130,7 +128,7 @@ class Article(ndb.Model):
         try:
             obj_id = self.key().id()
             resave = False
-        except ndb.NotSavedError:
+        except db.NotSavedError:
             # No key, hence no ID yet. This one hasn't been saved.
             # We'll save it once without the ID field; this first
             # save will cause GAE to assign it a key. Then, we can

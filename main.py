@@ -3,13 +3,10 @@
 
 import os
 import logging
-#import sys
-
-# import local libraries
-# sys.path.insert(0, 'libs')
 
 import webapp2
 from google.appengine.ext.webapp import template
+import defs
 
 # spits a path to a request handler
 def spitPath(self, path):
@@ -26,10 +23,6 @@ class PortfolioPage(webapp2.RequestHandler):
 	def get(self):
 		spitPath(self, "templates/portfolio.html")
 
-class BlogPage(webapp2.RequestHandler):
-	def get(self):
-		spitPath(self, "templates/blog.html")
-
 class AboutPage(webapp2.RequestHandler):
 	def get(self):
 		spitPath(self, "templates/about.html")
@@ -41,7 +34,6 @@ class NotFoundPage(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/portfolio', PortfolioPage),
-	('/blog', BlogPage),
 	('/about', AboutPage),
-	('/notfound', NotFoundPage)
+	('/.*', NotFoundPage)
 ], debug=True)
