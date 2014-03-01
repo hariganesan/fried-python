@@ -1,0 +1,43 @@
+/* created by Hari Ganesan 2/28/14
+	colors.css */
+
+body {
+  margin: 0px;
+}
+
+#main {
+}
+
+/* colors */
+
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.black {
+	background-color: black;
+}
+
+.white {
+	background-color: white;
+}

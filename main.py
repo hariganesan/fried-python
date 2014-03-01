@@ -27,6 +27,10 @@ class AboutPage(webapp2.RequestHandler):
 	def get(self):
 		spitPath(self, "templates/about.html")
 
+class ColorsPage(webapp2.RequestHandler):
+	def get(self):
+		spitPath(self, "templates/colors.html")
+
 class NotFoundPage(webapp2.RequestHandler):
 	def get(self):
 		spitPath(self, "templates/notfound.html")
@@ -35,5 +39,6 @@ app = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/portfolio', PortfolioPage),
 	('/about', AboutPage),
+	('/colors', ColorsPage),
 	('/.*', NotFoundPage)
 ], debug=True)
