@@ -5,7 +5,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	color: #8A8985;
+	color: #444;
 	height: 100%;
 	background-color: #000;
 }
@@ -17,7 +17,7 @@ h1, h2, h3 {
 	padding: 0;
 	text-transform: lowercase;
 	font-weight: normal;
-	color: #7D7764;
+	color: #333;
 }
 
 h1 {
@@ -191,7 +191,7 @@ a:hover {
 
 #content {
 	float: left;
-	width: 620px;
+	width: 630px;
 	padding: 0px 40px 0px 0px;
 }
 
@@ -207,7 +207,7 @@ a:hover {
 .post .title a {
 	border: none;
 	text-transform: lowercase;
-	color: #7D7764;
+	color: #334;
 }
 
 .post .meta {
