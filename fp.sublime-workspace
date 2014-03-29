@@ -56,37 +56,11 @@
 			}
 		},
 		{
-			"file": "app.yaml",
+			"file": "templates/about.html",
 			"settings":
 			{
-				"buffer_size": 534,
+				"buffer_size": 2735,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/colors.html",
-			"settings":
-			{
-				"buffer_size": 1310,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/js/colors.js",
-			"settings":
-			{
-				"buffer_size": 677,
-				"line_ending": "Unix",
-				"name": "// created by Hari Ganesan 2/18/14"
-			}
-		},
-		{
-			"file": "static/css/colors.css",
-			"settings":
-			{
-				"buffer_size": 404,
-				"line_ending": "Unix",
-				"name": "// created by Hari Ganesan 2/28/14"
 			}
 		}
 	],
@@ -125,8 +99,16 @@
 	},
 	"file_history":
 	[
-		"/Users/Hari/scm/fried-python/templates/index.html",
+		"/Users/Hari/scm/fried-python/static/css/colors.css",
+		"/Users/Hari/scm/fried-python/static/js/colors.js",
+		"/Users/Hari/scm/fried-python/templates/colors.html",
 		"/Users/Hari/scm/fried-python/app.yaml",
+		"/Users/Hari/scm/fried-python/templates/about.html",
+		"/Users/Hari/scm/fried-python/templates/blog.php",
+		"/Users/Hari/scm/fried-python/templates/blog.html",
+		"/Users/Hari/scm/fried-python/templates/portfolio.html",
+		"/Users/Hari/scm/fried-python/templates/notfound.html",
+		"/Users/Hari/scm/fried-python/templates/index.html",
 		"/Users/Hari/scm/fried-python/admin.py",
 		"/Users/Hari/scm/fried-python/handlers.py",
 		"/Users/Hari/scm/fried-python/blog.py",
@@ -143,7 +125,6 @@
 		"/Users/Hari/scm/fried-python/django_myblog/myblog/models.py",
 		"/Users/Hari/scm/fried-python/django/settings.py",
 		"/Users/Hari/scm/fried-python/django_myblog/myblog/views.py",
-		"/Users/Hari/scm/fried-python/templates/blog.html",
 		"/Users/Hari/scm/fried-python/django_myblog/django_myblog/urls.py",
 		"/Users/Hari/scm/fried-python/django_myblog/django_myblog/wsgi.py",
 		"/Users/Hari/scm/fried-python/django/urls.py",
@@ -245,14 +226,7 @@
 		"/Users/Hari/scm/fried-gator/public_html/notfound.html",
 		"/Users/Hari/scm/fried-gator/public_html/contact.html",
 		"/Users/Hari/scm/fried-gator/www/index.html",
-		"/Users/Hari/scm/fried-gator/www/blog.html",
-		"/Users/Hari/scm/fried-gator/index.html",
-		"/Users/Hari/scm/fried-gator/public/static/blog.html",
-		"/Users/Hari/scm/fried-gator/views/index.html",
-		"/Users/Hari/scm/fried-gator/src/index.jade",
-		"/Users/Hari/scm/fried-gator/src/layout.jade",
-		"/Users/Hari/scm/fried-gator/server/app.js",
-		"/Users/Hari/scm/fried-gator/src/main.css"
+		"/Users/Hari/scm/fried-gator/www/blog.html"
 	],
 	"find":
 	{
@@ -263,6 +237,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Hari/scm/fried-python",
 			"/Users/Hari/scm/fried-python/templates",
 			"/Users/Hari/scm/fried-python",
 			"/Users/Hari/scm/fried-python/views",
@@ -279,6 +254,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<a href=\"blog\">Blog</a>",
 			"#main",
 			"main",
 			"height",
@@ -405,8 +381,7 @@
 			"DIM;",
 			"))",
 			"g->mc",
-			"keys",
-			"keys.left"
+			"keys"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -414,6 +389,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"static/css/main.css",
 			"\"static/",
 			"src=\"public/images",
@@ -474,123 +450,30 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app.yaml",
+					"file": "templates/about.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 534,
+						"buffer_size": 2735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								2735,
+								2735
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "templates/colors.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								662,
-								662
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "static/js/colors.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								271
-							]
-						],
-						"settings":
-						{
-							"auto_name": "// created by Hari Ganesan 2/18/14",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "static/css/colors.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"auto_name": "// created by Hari Ganesan 2/28/14",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
 					"type": "text"
 				}
 			]

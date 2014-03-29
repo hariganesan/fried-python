@@ -1,37 +1,16 @@
-/* main.css */
+/* main css */
 
 body {
 	margin: 0;
-	padding: 0px 25px;
-	font-family: 'Kreon', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 	color: #8A8985;
 	height: 100%;
+	background-color: #000;
 }
 
-body.red {
-	background: #411;
-}
 
-body.green {
-	background: #142;
-}
-
-body.blue {
-	background: #125;
-}
-
-body.purple {
-	background: #417;
-}
-
-body.black {
-	background: #000;
-}
-
-strong, b {
-	color: black;
-}
 
 h1, h2, h3 {
 	margin: 0;
@@ -411,4 +390,70 @@ a:hover {
 
 #box1 {
 	margin-bottom: 30px;
+}
+
+
+
+
+/* new styles for home page */
+
+
+.red {
+	background: #411;
+}
+
+.green {
+	background: #142;
+}
+
+.blue {
+	background: #125;
+}
+
+.purple {
+	background: #417;
+}
+
+.black {
+	background: #000;
+}
+
+strong, b {
+	color: black;
+}
+
+.quadrant {
+	position: fixed;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	line-height: 4em;
+}
+
+.q-top {
+	top: 0%;
+}
+
+.q-bottom {
+	top: 50%;
+}
+
+.q-right {
+	left: 50%;
+}
+
+.quadrant a, .quadrant a:visited {
+	font-size: 100px;
+	text-decoration: none;
+	color: #def;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.quadrant a:hover {
+	font-weight: 400;
+	color: #fff;
 }
