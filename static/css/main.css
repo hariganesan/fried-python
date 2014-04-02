@@ -399,19 +399,19 @@ a:hover {
 
 
 .red {
-	background: #411;
+	background: #300;
 }
 
 .green {
-	background: #142;
+	background: #020;
 }
 
 .blue {
-	background: #125;
+	background: #003;
 }
 
 .purple {
-	background: #417;
+	background: #204;
 }
 
 .black {
@@ -442,6 +442,10 @@ strong, b {
 	left: 50%;
 }
 
+.q-left {
+	left: 0%;
+}
+
 .quadrant a, .quadrant a:visited {
 	font-size: 100px;
 	text-decoration: none;
@@ -456,4 +460,41 @@ strong, b {
 .quadrant a:hover {
 	font-weight: 400;
 	color: #fff;
+}
+
+/* other pages */
+
+#nav-box {
+	height: 12%;
+	width: 24%;
+	top: -12%;
+	right: -24%;
+	position: absolute;
+	z-index: 1;
+	color: #def;
+}
+
+#nav-box:hover {
+	color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+#nav-box-overlay {
+	height: 12%;
+	width: 24%;
+	top: 0%;
+	right: 0%;
+	position: absolute;
+	z-index: 0;
+	background-color: black;
+	opacity: 0;
+}
+
+.quadrant-nav {
+	position:absolute;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	line-height: 3em;
 }

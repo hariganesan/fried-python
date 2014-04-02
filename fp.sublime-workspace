@@ -4,8 +4,28 @@
 		"selected_items":
 		[
 			[
+				"q",
+				"q-top-left"
+			],
+			[
+				"q-",
+				"q-bottom-left"
+			],
+			[
+				"q-t",
+				"q-top-right"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
 				"back",
-				"background"
+				"background-color"
+			],
+			[
+				"font-",
+				"font-weight"
 			],
 			[
 				"pub",
@@ -48,18 +68,43 @@
 	"buffers":
 	[
 		{
-			"file": "main.py",
+			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 1064,
+				"buffer_size": 2047,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/blog.php",
+			"settings":
+			{
+				"buffer_size": 3412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/css/main.css",
+			"settings":
+			{
+				"buffer_size": 5188,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 1428,
+				"line_ending": "Unix",
+				"name": "// Created by Hari Ganesan 3/28/14"
 			}
 		},
 		{
 			"file": "templates/about.html",
 			"settings":
 			{
-				"buffer_size": 2735,
+				"buffer_size": 2733,
 				"line_ending": "Unix"
 			}
 		}
@@ -99,23 +144,23 @@
 	},
 	"file_history":
 	[
+		"/Users/Hari/scm/fried-python/main.py",
+		"/Users/Hari/scm/fried-python/templates/about.html",
+		"/Users/Hari/scm/fried-python/templates/index.html",
 		"/Users/Hari/scm/fried-python/static/css/colors.css",
 		"/Users/Hari/scm/fried-python/static/js/colors.js",
 		"/Users/Hari/scm/fried-python/templates/colors.html",
 		"/Users/Hari/scm/fried-python/app.yaml",
-		"/Users/Hari/scm/fried-python/templates/about.html",
 		"/Users/Hari/scm/fried-python/templates/blog.php",
 		"/Users/Hari/scm/fried-python/templates/blog.html",
 		"/Users/Hari/scm/fried-python/templates/portfolio.html",
 		"/Users/Hari/scm/fried-python/templates/notfound.html",
-		"/Users/Hari/scm/fried-python/templates/index.html",
 		"/Users/Hari/scm/fried-python/admin.py",
 		"/Users/Hari/scm/fried-python/handlers.py",
 		"/Users/Hari/scm/fried-python/blog.py",
 		"/Users/Hari/scm/fried-python/models.py",
 		"/Users/Hari/scm/fried-python/defs.py",
 		"/Users/Hari/scm/fried-python/robots.txt",
-		"/Users/Hari/scm/fried-python/main.py",
 		"/Users/Hari/scm/fried-python/templates/admin-main.html",
 		"/Users/Hari/scm/fried-python/templates/base.html",
 		"/Users/Hari/scm/fried-python/templates/admin-edit.html",
@@ -230,7 +275,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -254,6 +299,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"media",
+			"color",
+			"href",
+			"<a class=",
+			"<a class=\"homeLink\" href=\"#\" data-target=",
+			"#",
+			"linkClicked",
+			"a ",
+			".delay(time)",
+			"href=",
+			"left",
+			",",
+			": \"",
+			"quad",
+			"par",
+			"\"/",
+			"<a>",
+			"\">",
+			"body",
 			"<a href=\"blog\">Blog</a>",
 			"#main",
 			"main",
@@ -362,26 +426,7 @@
 			"VIEWS",
 			"Open+Sans+Condensed:300",
 			"example",
-			"75",
-			"0.3",
-			"1",
-			"image->h/10",
-			"image->w/10",
-			"1",
-			"_",
-			"200",
-			"228",
-			"328",
-			"or",
-			"F_BOX_DIM;",
-			"timer",
-			"display",
-			"255",
-			"oid",
-			"DIM;",
-			"))",
-			"g->mc",
-			"keys"
+			"75"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -415,54 +460,143 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.py",
+					"file": "templates/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1064,
+						"buffer_size": 2047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1025,
-								1025
+								1000,
+								1000
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/about.html",
-					"semi_transient": false,
+					"file": "templates/blog.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2735,
+						"buffer_size": 3412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2735,
-								2735
+								1850,
+								1850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1913,
+								1913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2460.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "static/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1027,
+								1027
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Created by Hari Ganesan 3/28/14",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2733,
+								2733
 							]
 						],
 						"settings":
@@ -473,7 +607,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

@@ -31,13 +31,13 @@ $(".homeLink").click(
       }
     }
     homeLinkClicked = true;
-    $(this).delay(1500).fadeOut(500);
-    $(this).parent().delay(1500)
-      .animate({width: '100%', height: '100%', top: '0%', left: '0%'}, 1000);
+    $(this).delay(1000).fadeOut(400);
+    $(this).parent().delay(1000)
+      .animate({width: '100%', height: '100%', top: '0%', left: '0%'}, 700);
     var target = $(this).attr("data-target");
     setTimeout(function() {
       window.location = target;
-    }, 3000);
+    }, 2000);
     // document.getElementById("link-" + $(this).attr("data-target")).click();
   }
 );
