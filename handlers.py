@@ -20,7 +20,6 @@ class BlogRequestHandler(webapp2.RequestHandler):
 
 	# Render a template and write the output to ``self.response.out``.
 	def render_template(self, template_name, template_vars):
-		
 		template_path = self.get_template(template_name)
 		return template.render(template_path, template_vars)
 
@@ -117,14 +116,13 @@ class AbstractPageHandler(BlogRequestHandler):
 							  'date_list'    : self.get_month_counts(),
 							  'version'      : '0.3',
 							  'last_updated' : last_updated,
-							  'blog_path'    : '/',
+							  'blog_path'    : '/blog',
 							  'blog_url'     : blog_url,
 							  'archive_path' : '/' + defs.ARCHIVE_URL_PATH,
 							  'tag_path'     : tag_path,
 							  'tag_url'      : tag_url,
 							  'date_path'    : date_path,
 							  'date_url'     : date_url,
-							  'rss2_path'    : '/' + defs.RSS2_URL_PATH,
 							  'recent'       : recent}
 
 		return self.render_template(template_name, template_variables)

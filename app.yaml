@@ -24,11 +24,12 @@ handlers:
   script: admin.py
   login: admin
 
-- url: /blog
-  script: blog.app
-
 - url: .*
   script: main.app
+
+libraries:
+- name: webapp2
+  version: latest
 
 builtins:
 - appstats: on
