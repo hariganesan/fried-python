@@ -1,58 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- main admin page for fried-python -->
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
-<title>Example blog: Admin</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/static/css/admin.css" rel="stylesheet" type="text/css"/>
+    <title>Hari's blog: Admin</title>
+  </head>
 
-<script type="text/javascript">
+  <body>
+    <div id="container">
 
-function show_site()
-{
-    document.location = "/"
-}
+      <div class="admin-page-area">
 
-function new_article()
-{
-    document.admin.action = "/admin/article/new/"
-    document.admin.submit()
-}
+        <h1 class="admin-page-title">Existing articles</h1>
 
-</script>
+        <div class="admin-main-buttons">
+          <table align="center"><tr><td>
+            <input type="button" name="new" onClick="new_article()" value="New article"/>
+            <input type="button" name="show" onClick="show_site()" value="Show site"/>
+          </td></tr></table>
+        </div>
 
-<body>
-<div id="container">
+        <form action="" method="show" name="admin">
+          <ul>
+          {% for article in articles %}
+            {% if article.draft %}
+            <li class="admin-draft">
+            {% else %}
+            <li class="admin-published">
+            {% endif %}
+            {{ article.published_when|date:"j F, Y" }}&nbsp;
+            <a href="/admin/article/edit/?id={{ article.key.id }}">{{ article.title }}</a>
+          {% endfor %}
+          </ul>
+        </form>
 
-<div class="admin-page-area">
+      </div>
 
-<h1 class="admin-page-title">Existing articles</h1>
+    </div>  
+  </body>
+  <script type="text/javascript">
 
-<div class="admin-main-buttons">
-<table align="center"><tr><td>
-<input type="button" name="new" onClick="new_article()" value="New article"/>
-<input type="button" name="show" onClick="show_site()" value="Show site"/>
-</td></tr></table>
-</div>
+  function show_site()
+  {
+      document.location = "/"
+  }
 
-<form action="" method="show" name="admin">
+  function new_article()
+  {
+      document.admin.action = "/admin/article/new/"
+      document.admin.submit()
+  }
 
-<ul>
-{% for article in articles %}
-  {% if article.draft %}
-  <li class="admin-draft">
-  {% else %}
-  <li class="admin-published">
-  {% endif %}
-  {{ article.published_when|date:"j F, Y" }}&nbsp;
-  <a href="/admin/article/edit/?id={{ article.id }}">{{ article.title }}</a>
-{% endfor %}
-</ul>
-
-</form>
-
-</div>
-
-</div>
-</body>
+  </script>
 </html>

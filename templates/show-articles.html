@@ -4,6 +4,7 @@
   {% for article in articles %}
     {% include "article.html" %}
   {% endfor %}
+  <div class="text-button" style="width: 10em"><a href="{{ archive_path }}">Complete archive.</a></div>
 {% endblock %}
 
 {% block recent_list %}
@@ -16,26 +17,3 @@
     </ul>
   {% endif %}
 {% endblock %}
-
-{% block date_list %}
-  {% if date_list %}
-    <b>By month:</b>
-    <ul>
-    {% for date_count in date_list %}
-      <li><a href="{{ date_path }}/{{ date_count.date|date:"Y-m" }}/">{{ date_count.date|date:"F, Y" }}</a> ({{ date_count.count }})
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endblock %}
-
-{% block tag_list %}
-  {% if tag_list %}
-    <div id="tag-cloud">
-    {% for tag_count in tag_list %}
-      <a class="{{ tag_count.css_class }}" 
-         href="{{ tag_path }}/{{ tag_count.tag }}/">{{ tag_count.tag }}({{ tag_count.count }})</a>{% if not forloop.last %},{% endif %}
-    {% endfor %}
-    </div>
-  {% endif %}
-{% endblock %}
-

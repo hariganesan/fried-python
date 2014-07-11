@@ -3,11 +3,12 @@
 
 import os
 import random
+import logging
 
+import webapp2
 from google.appengine.ext.webapp import template
 
 import defs
-import webapp2
 from models import *
 
 
@@ -27,34 +28,34 @@ class BlogRequestHandler(webapp2.RequestHandler):
 # this class exists to consolidate common logic.
 class AbstractPageHandler(BlogRequestHandler):
 	# Get tag counts and calculate tag cloud frequencies.
-	def get_tag_counts(self):
-		tag_counts = Article.get_all_tags()
-		result = []
-		if tag_counts:
-			maximum = max(tag_counts.values())
+	# def get_tag_counts(self):
+	# 	tag_counts = Article.get_all_tags()
+	# 	result = []
+	# 	if tag_counts:
+	# 		maximum = max(tag_counts.values())
 
-			for tag, count in tag_counts.items():
-				tc = TagCount(tag, count)
+	# 		for tag, count in tag_counts.items():
+	# 			tc = TagCount(tag, count)
 
-				# Determine the popularity of this term as a percentage.
-				percent = math.floor((tc.count * 100) / maximum)
+	# 			# Determine the popularity of this term as a percentage.
+	# 			percent = math.floor((tc.count * 100) / maximum)
 
-				# determine the CSS class for this term based on the percentage
-				if percent <= 20:
-					tc.css_class = 'tag-cloud-tiny'
-				elif 20 < percent <= 40:
-					tc.css_class = 'tag-cloud-small'
-				elif 40 < percent <= 60:
-					tc.css_class = 'tag-cloud-medium'
-				elif 60 < percent <= 80:
-					tc.css_class = 'tag-cloud-large'
-				else:
-					tc.css_class = 'tag-cloud-huge'
+	# 			# determine the CSS class for this term based on the percentage
+	# 			if percent <= 20:
+	# 				tc.css_class = 'tag-cloud-tiny'
+	# 			elif 20 < percent <= 40:
+	# 				tc.css_class = 'tag-cloud-small'
+	# 			elif 40 < percent <= 60:
+	# 				tc.css_class = 'tag-cloud-medium'
+	# 			elif 60 < percent <= 80:
+	# 				tc.css_class = 'tag-cloud-large'
+	# 			else:
+	# 				tc.css_class = 'tag-cloud-huge'
 					
-				result.append(tc)
+	# 			result.append(tc)
 
-		random.shuffle(result)
-		return result
+	# 	random.shuffle(result)
+	# 	return result
 
 	# Get date counts, sorted in reverse chronological order.
 	def get_month_counts(self):
@@ -80,10 +81,11 @@ class AbstractPageHandler(BlogRequestHandler):
 		for article in articles:
 			if html:
 				try:
-					article.html = rst2html(article.body)
+					logging.info(article.body)
+					article.html = article.body
 				except AttributeError:
 					article.html = ''
-			article.path = '/' + defs.ARTICLE_URL_PATH + '/%s' % article.id
+			article.path = '/%s' % article.key.id()
 			article.url = url_prefix + article.path
 
 	# Render a list of articles.
@@ -102,8 +104,8 @@ class AbstractPageHandler(BlogRequestHandler):
 			last_updated = articles[0].published_when
 
 		blog_url = url_prefix
-		tag_path = '/' + defs.TAG_URL_PATH
-		tag_url = url_prefix + tag_path
+		# tag_path = '/' + defs.TAG_URL_PATH
+		# tag_url = url_prefix + tag_path
 		date_path = '/' + defs.DATE_URL_PATH
 		date_url = url_prefix + date_path
 		media_path = '/' + defs.MEDIA_URL_PATH
@@ -112,15 +114,15 @@ class AbstractPageHandler(BlogRequestHandler):
 		template_variables = {'blog_name'    : defs.BLOG_NAME,
 							  'blog_owner'   : defs.BLOG_OWNER,
 							  'articles'     : articles,
-							  'tag_list'     : self.get_tag_counts(),
+							  # 'tag_list'     : self.get_tag_counts(),
 							  'date_list'    : self.get_month_counts(),
 							  'version'      : '0.3',
 							  'last_updated' : last_updated,
 							  'blog_path'    : '/blog',
 							  'blog_url'     : blog_url,
 							  'archive_path' : '/' + defs.ARCHIVE_URL_PATH,
-							  'tag_path'     : tag_path,
-							  'tag_url'      : tag_url,
+							  # 'tag_path'     : tag_path,
+							  # 'tag_url'      : tag_url,
 							  'date_path'    : date_path,
 							  'date_url'     : date_url,
 							  'recent'       : recent}

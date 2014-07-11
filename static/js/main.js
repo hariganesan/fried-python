@@ -31,9 +31,9 @@ $(".homeLink").click(
       }
     }
     homeLinkClicked = true;
-    $(this).delay(1000).fadeOut(400);
-    $(this).parent().delay(1000)
-      .animate({width: '100%', height: '100%', top: '0%', left: '0%'}, 700);
+    $(this).delay(1000).fadeOut(300);
+    $(this).parent().delay(600)
+      .animate({width: '100%', height: '100%', top: '0%', left: '0%'}, 600);
     var target = $(this).attr("data-target");
     setTimeout(function() {
       window.location = target;
@@ -44,8 +44,8 @@ $(".homeLink").click(
 
 function moveElement(elementID) {
   if (elementID === "q-top-left" || elementID === "q-bottom-left") {
-    $("#" + elementID).animate({left: '-=1000'}, 1000);
+    $("#" + elementID).animate({left: '-=1000'}, 800);
   } else if (elementID === "q-top-right" || elementID === "q-bottom-right") {
-    $("#" + elementID).animate({left: '+=1000'}, 1000);
+    $("#" + elementID).animate({left: '+=1000'}, 800);
   }
 };

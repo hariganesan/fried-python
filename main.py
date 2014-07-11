@@ -6,7 +6,7 @@ import logging
 import json
 
 from google.appengine.ext.webapp import template
-from google.appengine.ext import db
+from google.appengine.ext import ndb
 import webapp2
 
 # used for template subdirectory
@@ -17,50 +17,11 @@ import handlers
 # spits a path to a request handler
 def spitPath(self, path):
 	fullPath = os.path.join(os.path.dirname(__file__), path)
-	logging.info(os.path.dirname(__file__))
 	self.response.out.write(template.render(fullPath, {}))
-
-####################
-# Models and objects
-####################
-
-# mail info model for mailing list
-class MailInfo(db.Model):
-	name = db.StringProperty()
-	email = db.StringProperty()
-
-	@classmethod
-	def get_list(cls):
-		return cls.query().order(cls.name)
-
-# Convenience class for storing and sorting year/month counts.
-class DateCount(object):
-	def __init__(self, date, count):
-		self.date = date
-		self.count = count
-
-	def __cmp__(self, other):
-		return cmp(self.date, other.date)
-
-	def __hash__(self):
-		return self.date.__hash__()
-
-	def __str__(self):
-		return '%s(%d)' % (self.date, self.count)
-
-	def __repr__(self):
-		return '<%s: %s>' % (self.__class__.__name__, str(self))
-
-# Convenience class for storing and sorting tags and counts.
-class TagCount(object):
-	def __init__(self, tag, count):
-		self.css_class = ""
-		self.count = count
-		self.tag = tag
 
 
 #########################
-# Main Handlers
+# Static Handlers
 #########################
 
 # main routes to static pages
@@ -105,12 +66,12 @@ class FrontPageHandler(handlers.AbstractPageHandler):
 
 # Handles requests to display a set of articles that have a
 # particular tag.
-class ArticlesByTagHandler(handlers.AbstractPageHandler):
-	def get(self, tag):
-		articles = Article.all_for_tag(tag)
-		self.response.out.write(self.render_articles(articles,
-													 self.request,
-													 self.get_recent()))
+# class ArticlesByTagHandler(handlers.AbstractPageHandler):
+# 	def get(self, tag):
+# 		articles = Article.all_for_tag(tag)
+# 		self.response.out.write(self.render_articles(articles,
+# 													 self.request,
+# 													 self.get_recent()))
 
 # Handles requests to display a set of articles that were published
 # in a given month.
@@ -143,6 +104,7 @@ class SingleArticleHandler(handlers.AbstractPageHandler):
 class ArchivePageHandler(handlers.AbstractPageHandler):
 	def get(self):
 		articles = Article.published()
+		logging.info(len(articles))
 		self.response.out.write(self.render_articles(articles,
 													 self.request,
 													 [],
@@ -155,7 +117,7 @@ app = webapp2.WSGIApplication([
 	('/extra', ExtraPageHandler),
 	('/colors', ColorsPageHandler),
 	('/blog', FrontPageHandler),
-	('/tag/([^/]+)/*$', ArticlesByTagHandler),
+	# ('/tag/([^/]+)/*$', ArticlesByTagHandler),
 	('/date/(\d\d\d\d)-(\d\d)/?$', ArticlesForMonthHandler),
 	('/id/(\d+)/?$', SingleArticleHandler),
 	('/archive/?$', ArchivePageHandler),

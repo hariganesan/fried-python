@@ -12,7 +12,7 @@
 
     <title>Hari's Website</title>
     <link rel="shortcut icon" href="static/images/favicon.ico" />
-    <link href="http://fonts.googleapis.com/css?family=Kreon:400" rel="stylesheet" type=
+    <link href="http://fonts.googleapis.com/css?family=Neuton:200" rel="stylesheet" type=
     "text/css" />
     <link href="static/css/main.css" rel="stylesheet" type="text/css" media="screen" />
   </head>
@@ -20,10 +20,8 @@
   <body class="red">
     <div id="header-wrapper">
       <div id="header" class="container">
-        <div id="logo">
-          <h1><a href="/">Hari Ganesan</a></h1>
-        </div>
-
+        <div id="logo"><a href="/blog">blog</a></div>
+        
         <div id="nav-box">
           <div id="q-top-left" class="quadrant-nav red"></div>
           <div id="q-top-right" class="quadrant-nav q-right green">Portfolio</div>
@@ -36,45 +34,22 @@
     <div id="wrapper">
       <div id="page" class="container">
         <div id="content">
-        
-          <div class="text-button" style="width: 10em"><a href="{{ blog_path }}">Top of the blog.</a></div>
-          <div class="text-button" style="width: 10em"><a href="{{ archive_path }}">Complete archive.</a></div>
-          <tr valign="top">
-            <td width="20%" class="margin-area" align="left">
-              <div>
-              <br clear="all"/><br/>
-              {% block tag_list %}{% endblock %}
-              </div>
-            </td>
-            <td width="60%" class="body">
-              <table width="100%" cellpadding="0" cellspacing="0">
-                <tr valign="top">
-                  <td width="10">&nbsp;</td>
-                  <td align="left">
-                    <div id="articles_container">
-                      {% block main %}{% endblock %}
-                    </div>
-                  </td>
-                  <td width="10">&nbsp;</td>
-                </tr>
-              </table>
-            </td>
-            <td width="20%" class="margin-area">
-              <div id="right-margin">
-                {% block recent_list %}{% endblock %}
-                {% block date_list %}{% endblock %}
-              </div>
-            </td>
-          </tr>
+          <div id="article-container">
+            {% block main %}{% endblock %}
+          </div>
+
+<!--             <div id="recent-container">
+            {% block recent_list %}{% endblock %}
+             {% block date_list %}{% endblock %}
+          </div>
+-->          
 
           <div style="clear: both;">
               &nbsp;
           </div>
         </div>
       </div>
-      <div id="push"></div>
-    </div>
-
+      </div>
     <div id="footer">
       <p class="small">built on App Engine (poor man's AWS) with some jQuery magic (just plain poor)</p>
     </div>
