@@ -2,12 +2,16 @@
 
 body {
 	margin: 0;
-	font-family: 'Neuton', sans-serif;
-	font-weight: 200;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
 	font-size: 22px;
 	color: #112;
 	height: 100%;
 	background-color: #eef;
+}
+
+.quadrant, .quadrant-nav {
+	font-weight: 100;
 }
 
 h1 {
@@ -85,6 +89,7 @@ a:hover {
 #logo * {
 	font-size: 70px;
 	color: #fff;
+	font-weight: 100;
 }
 
 /* Menu */
