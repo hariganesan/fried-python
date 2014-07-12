@@ -81,7 +81,6 @@ class AbstractPageHandler(BlogRequestHandler):
 		for article in articles:
 			if html:
 				try:
-					logging.info(article.body)
 					article.html = article.body
 				except AttributeError:
 					article.html = ''
