@@ -1,13 +1,13 @@
 
   <div class="article">
-      <div class="article-title"><h3>{{ article.published_when|date:"n.j.Y" }} </h3><h1>{{ article.title }}</h1></div>
-    </div>
+    <div class="article-date">{{ article.published_when|date:"n.j.Y" }}</div>
+    <div class="article-title">{{ article.title }}</div>
     {% if article.draft %}
     <div class="article-body-draft">
     {% else %}
     <div class="article-body">
     {% endif %}
-    {{ article.html }}
+      {{ article.html }}
     </div>
   </div>
   <br />
