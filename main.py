@@ -39,7 +39,7 @@ class AboutPageHandler(webapp2.RequestHandler):
 
 class ColorsPageHandler(webapp2.RequestHandler):
 	def get(self):
-		spitPath(self, "templates/colors.html")
+		spitPath(self, "templates/main/colors.html")
 
 class ExtraPageHandler(webapp2.RequestHandler):
 	def get(self):
@@ -119,7 +119,7 @@ app = webapp2.WSGIApplication([
 	('/blog', FrontPageHandler),
 	# ('/tag/([^/]+)/*$', ArticlesByTagHandler),
 	('/date/(\d\d\d\d)-(\d\d)/?$', ArticlesForMonthHandler),
-	('/id/(\d+)/?$', SingleArticleHandler),
+	('/(\d+)/?$', SingleArticleHandler),
 	('/archive/?$', ArchivePageHandler),
 	('/.*$', NotFoundPageHandler)
 ], debug=True)

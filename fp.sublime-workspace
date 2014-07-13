@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"published",
-				"published_when"
+				"font-",
+				"font-style"
 			],
 			[
 				"back",
 				"background-color"
+			],
+			[
+				"published",
+				"published_when"
 			],
 			[
 				"q",
@@ -26,10 +30,6 @@
 			[
 				"text-",
 				"text-align"
-			],
-			[
-				"font-",
-				"font-weight"
 			],
 			[
 				"pub",
@@ -72,34 +72,18 @@
 	"buffers":
 	[
 		{
-			"file": "templates/admin-edit.html",
-			"settings":
-			{
-				"buffer_size": 4009,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "admin.py",
-			"settings":
-			{
-				"buffer_size": 4133,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 3723,
+				"buffer_size": 3701,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models.py",
+			"file": "app.yaml",
 			"settings":
 			{
-				"buffer_size": 4344,
+				"buffer_size": 549,
 				"line_ending": "Unix"
 			}
 		}
@@ -139,25 +123,32 @@
 	},
 	"file_history":
 	[
-		"/Users/Hari/scm/fried-python/models.py",
-		"/Users/Hari/scm/fried-python/main.py",
-		"/Users/Hari/scm/fried-python/handlers.py",
-		"/Users/Hari/scm/fried-python/defs.py",
+		"/Users/Hari/Documents/Dell/Random Stuff/Hari.jpg/Home stuff/scrip/scrip.py",
 		"/Users/Hari/scm/fried-python/static/css/main.css",
-		"/Users/Hari/scm/fried-python/templates/article.html",
-		"/Users/Hari/scm/fried-python/templates/archive.html",
-		"/Users/Hari/scm/fried-python/templates/show-articles.html",
-		"/Users/Hari/scm/fried-python/templates/blog.html",
-		"/Users/Hari/scm/fried-python/admin.py",
-		"/Users/Hari/scm/fried-python/app.yaml",
-		"/Users/Hari/scm/fried-python/templates/main/index.html",
-		"/Users/Hari/scm/fried-python/templates/main/extra.html",
-		"/Users/Hari/scm/fried-python/templates/main/about.html",
 		"/Users/Hari/scm/fried-python/templates/main/portfolio.html",
+		"/Users/Hari/scm/fried-python/templates/main/index.html",
+		"/Users/Hari/scm/fried-python/templates/main/about.html",
+		"/Users/Hari/scm/fried-python/templates/main/extra.html",
+		"/Users/Hari/scm/fried-python/templates/main/head.html",
+		"/Users/Hari/scm/fried-python/templates/show-articles.html",
+		"/Users/Hari/scm/fried-python/defs.py",
+		"/Users/Hari/scm/fried-python/templates/main/colors.html",
+		"/Users/Hari/scm/fried-python/handlers.py",
+		"/Users/Hari/scm/fried-python/templates/blog.html",
+		"/Users/Hari/scm/fried-python/templates/main/blog.html",
+		"/Users/Hari/scm/fried-python/templates/main/notfound.html",
+		"/Users/Hari/scm/fried-python/templates/colors.html",
+		"/Users/Hari/scm/fried-python/templates/article.html",
+		"/Users/Hari/scm/fried-python/templates/admin-edit.html",
+		"/Users/Hari/scm/fried-python/templates/admin-main.html",
+		"/Users/Hari/scm/fried-python/admin.py",
+		"/Users/Hari/scm/fried-python/main.py",
+		"/Users/Hari/scm/fried-python/models.py",
+		"/Users/Hari/scm/fried-python/static/css/admin.css",
+		"/Users/Hari/scm/fried-python/templates/archive.html",
+		"/Users/Hari/scm/fried-python/app.yaml",
 		"/Users/Hari/scm/fried-python/static/js/main.js",
 		"/Users/Hari/scm/fried-python/docs/ideas.md",
-		"/Users/Hari/scm/fried-python/templates/admin-main.html",
-		"/Users/Hari/scm/fried-python/templates/admin-edit.html",
 		"/Users/Hari/scm/fried-python/blog.py",
 		"/Users/Hari/scm/fried-python/templates/not-found.html",
 		"/Users/Hari/scm/fried-python/templates/index.html",
@@ -168,7 +159,6 @@
 		"/Users/Hari/scm/fried-python/static/js/nav.js",
 		"/Users/Hari/scm/fried-python/static/css/colors.css",
 		"/Users/Hari/scm/fried-python/static/js/colors.js",
-		"/Users/Hari/scm/fried-python/templates/colors.html",
 		"/Users/Hari/scm/fried-python/templates/blog.php",
 		"/Users/Hari/scm/fried-python/robots.txt",
 		"/Users/Hari/scm/fried-python/templates/base.html",
@@ -260,13 +250,7 @@
 		"/Users/Hari/scm/fried-gator/docs/techideas.md",
 		"/Users/Hari/scm/fried-gator/app.js",
 		"/Users/Hari/scm/fried-gator/docs/ideas.md",
-		"/Users/Hari/scm/fried-gator/views/posts/blog8.jade",
-		"/Users/Hari/scm/fried-gator/views/projects.jade",
-		"/Users/Hari/scm/fried-gator/views/layout/header-wrapper.jade",
-		"/Users/Hari/scm/fried-gator/views/posts/blog7.jade",
-		"/Users/Hari/scm/fried-gator/views/posts/blog6.jade",
-		"/Users/Hari/scm/fried-gator/views/posts/blog4.jade",
-		"/Users/Hari/scm/fried-gator/views/posts/blog1.jade"
+		"/Users/Hari/scm/fried-gator/views/posts/blog8.jade"
 	],
 	"find":
 	{
@@ -296,6 +280,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Neuton",
+			"article.html",
+			"padding: 200px;",
+			"key",
+			"c00",
+			"uery(cls.",
+			"db.",
+			"FETCH_THEM_ALL",
 			"blog.css",
 			"article",
 			"block main",
@@ -415,15 +407,7 @@
 			"li",
 			"	p",
 			"p",
-			"day",
-			"”",
-			" ",
-			"image",
-			"contact",
-			"| ",
-			"projects",
-			"p.",
-			"strong"
+			"day"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -457,76 +441,45 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/admin-edit.html",
+					"file": "main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4009,
+						"buffer_size": 3701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								186,
-								186
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1355.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2265,
-								2220
+								665,
+								665
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1085.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "main.py",
+					"buffer": 1,
+					"file": "app.yaml",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3723,
+						"buffer_size": 549,
 						"regions":
 						{
 						},
@@ -539,43 +492,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 716.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4344,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 14.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
