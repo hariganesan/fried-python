@@ -1,24 +1,29 @@
 // Created by Hari Ganesan 3/28/14
 // main.js for website
+var qArray = ["q-left", "q-right"];
 
-var colorDict = {
-  "q-top-left": "red",
-  "q-top-right": "green",
-  "q-bottom-left": "blue",
-  "q-bottom-right": "purple"
-};
-
-var colorArray = [ "q-top-left", "q-top-right", 
-                   "q-bottom-left", "q-bottom-right"];
+var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 
 var homeLinkClicked = false;
+var currentColor = null;
+var currentColorIndex = 0;
 
 $(".homeLink").hover(
   function() {
-    $(this).parent().addClass(colorDict[$(this).parent().attr("id")]);
+    if (currentColorIndex >= colors.length - 1) {
+      currentColorIndex = 0;
+    } else {
+      currentColorIndex += 1;
+    }
+
+    currentColor = colors[currentColorIndex];
+    $(this).parent().addClass(currentColor);
+    $(this).parent().addClass("hover");
   }, function() {
     if (!homeLinkClicked) {
-      $(this).parent().removeClass(colorDict[$(this).parent().attr("id")]);
+      $(this).parent().removeClass(currentColor);
+      $(this).parent().removeClass("hover");
+      currentColor = null;
     }
   }
 );
@@ -26,8 +31,8 @@ $(".homeLink").hover(
 $(".homeLink").click(
   function() {
     for (var i = 0; i < 4; i++) {
-      if ($(this).parent().attr("id") !== colorArray[i]) {
-        moveElement(colorArray[i]);
+      if ($(this).parent().attr("id") !== qArray[i]) {
+        moveElement(qArray[i]);
       }
     }
     homeLinkClicked = true;
@@ -43,9 +48,9 @@ $(".homeLink").click(
 );
 
 function moveElement(elementID) {
-  if (elementID === "q-top-left" || elementID === "q-bottom-left") {
+  if (elementID === "q-left") {
     $("#" + elementID).animate({left: '-=1000'}, 800);
-  } else if (elementID === "q-top-right" || elementID === "q-bottom-right") {
+  } else if (elementID === "q-right") {
     $("#" + elementID).animate({left: '+=1000'}, 800);
   }
 };

@@ -1,246 +1,246 @@
 /* main css */
 
 body {
-	margin: 0;
-	font-family: 'Roboto Slab', sans-serif;
-	font-weight: 300;
-	font-size: 22px;
-	color: #112;
-	height: 100%;
-	background-color: #eef;
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #112;
+  height: 100%;
+  background-color: #eef;
 }
 
 .quadrant, .quadrant-nav {
-	font-weight: 100;
+  font-weight: 100;
 }
 
 h1 {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 h2 {
-	font-size: 2.8em;
+  font-size: 2.8em;
 }
 
 h3 {
-	font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 a {
-	text-decoration: none;
-	color: #44c;
+  text-decoration: none;
+  color: #44c;
 }
 
 a:hover {
-	color: #88d;
+  color: #88d;
 }
 
 #wrapper {
-	height: auto;
-	height: 100%;
-	overflow: hidden;
-	background-color: #FFFFFF;
+  height: auto;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 #push {
-	height: 4em;
+  height: 4em;
 }
 
 .small {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .container {
-	width: auto;
-	margin: 0px auto;
+  width: auto;
+  margin: 0px auto;
 }
 
 .left {
-	float: left;
+  float: left;
 }
 
 .side-buffer {
-	margin: 0px 25px;
+  margin: 0px 25px;
 }
 
 .up-buffer {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .down-buffer {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 
 /* Header */
 
 #header-wrapper {
-	overflow: hidden;
-	height: 100px;
+  overflow: hidden;
+  height: 100px;
 }
 
 #header {
-	width: auto;
-	height: 100px;
-	margin: 0 auto;
-	padding: 0px 20px;
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0px 20px;
 }
 
 #logo * {
-	font-size: 70px;
-	color: #fff;
-	font-weight: 100;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 100;
 }
 
 /* Menu */
 
 #page {
-	padding: 25px;
+  padding: 25px;
 }
 
 #footer {
-	text-align: center;
-	color: #aaa;
-	padding: 10px;
+  text-align: center;
+  color: #aaa;
+  padding: 10px;
 }
 
 /* Content */
 
 .post {
-	padding: 0px 200px;
-	text-align: justify;
+  padding: 0px 200px;
+  text-align: justify;
 }
 
 #article-container {
-	padding: 0px 200px;
+  padding: 0px 200px;
 }
 
 .article-date {
-	font-style: italic;
-	font-size: 16px;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .article {
-	margin: 5px 0px 50px 0px;
+  margin: 5px 0px 50px 0px;
 }
 
 .article-title {
-	font-size: 45px;
-	margin-bottom: 10px;
+  font-size: 45px;
+  margin-bottom: 10px;
 }
 
 .article-body {
-	font-size: 22px;
+  font-size: 22px;
 }
 
 /* profile pic */
 #photo {
-	margin: auto;
-	display: block;
-	width: 200px;
-	height: 200px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
 }
 
 /* new styles for home page */
 
 
 .red {
-	background: #002;
+  background: #211;
+}
+
+.orange {
+  background: #221; 
+}
+
+.yellow {
+  background: #121;
 }
 
 .green {
-	background: #012;
+  background: #122;
 }
 
 .blue {
-	background: #102;
+  background: #112;
 }
 
 .purple {
-	background: #112;
+  background: #212;
 }
 
 .black {
-	background: #000;
+  background: #000;
 }
 
 strong, b {
-	color: black;
+  color: black;
 }
 
 .quadrant {
-	position: fixed;
-	height: 50%;
-	width: 50%;
-	text-align: center;
-	line-height: 4em;
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  line-height: 4em;
 }
 
-.q-top {
-	top: 0%;
+#q-right {
+  left: 50%;
 }
 
-.q-bottom {
-	top: 50%;
-}
-
-.q-right {
-	left: 50%;
-}
-
-.q-left {
-	left: 0%;
+#q-left {
+  left: 0%;
 }
 
 .quadrant a, .quadrant a:visited {
-	font-size: 100px;
-	text-decoration: none;
-	color: #def;
-	position: absolute;
-	top: 35%;
-	left: 0;
-	right: 0;
-	margin: auto;
+  font-size: 100px;
+  text-decoration: none;
+  color: #def;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .quadrant a:hover {
-	font-weight: 400;
-	color: #fff;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* other pages */
 
 #nav-box {
-	height: 100px;
-	width: 24%;
-	top: -12%;
-	right: -24%;
-	position: absolute;
-	z-index: 1;
-	color: #def;
+  height: 100px;
+  width: 24%;
+  top: -12%;
+  right: -24%;
+  position: absolute;
+  z-index: 1;
+  color: #def;
 }
 
 #nav-box:hover {
-	color: #fff;
-	font-weight: 400;
-	cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 #nav-box-overlay {
-	height: 12%;
-	width: 24%;
-	top: 0%;
-	right: 0%;
-	position: absolute;
-	z-index: 0;
-	background-color: black;
-	opacity: 0;
+  height: 12%;
+  width: 24%;
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  z-index: 0;
+  background-color: black;
+  opacity: 0;
 }
 
 .quadrant-nav {
-	position:absolute;
-	height: 50%;
-	width: 50%;
-	text-align: center;
-	line-height: 47px;
+  position:absolute;
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  line-height: 47px;
 }
