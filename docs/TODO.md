@@ -1,6 +1,5 @@
 TODO
 ======
 
-- work on portfolio
-- switch over to LESS
-- work on pagination/MYSQL/php?
+- find some cool js animation libraries
+- do some cool animations somewhere where it makes sense
