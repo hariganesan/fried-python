@@ -4,10 +4,9 @@ body {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
-  font-size: 22px;
-  color: #112;
+  font-size: 20px;
+  color: #667;
   height: 100%;
-  background-color: #eef;
 }
 
 .quadrant, .quadrant-nav {
@@ -35,11 +34,53 @@ a:hover {
   color: #88d;
 }
 
+/* Header */
+
+#header-wrapper {
+  height: 100px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#header {
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+#logo * {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 100;
+}
+
+#nav {
+  width: 300px;
+  top: 50px;
+  right: 2%;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #ccc;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* body */
+
 #wrapper {
-  height: auto;
-  height: 100%;
-  overflow: hidden;
-  background-color: #FFFFFF;
+  margin-top: 100px;
+  background-color: #fff;
 }
 
 #push {
@@ -71,26 +112,11 @@ a:hover {
   margin-bottom: 25px;
 }
 
-
-/* Header */
-
-#header-wrapper {
-  overflow: hidden;
-  height: 100px;
+.center {
+  text-align: center;
 }
 
-#header {
-  width: auto;
-  height: 100px;
-  margin: 0 auto;
-  padding: 0px 20px;
-}
 
-#logo * {
-  font-size: 70px;
-  color: #fff;
-  font-weight: 100;
-}
 
 /* Menu */
 
@@ -143,29 +169,20 @@ a:hover {
 
 /* new styles for home page */
 
-
-.red {
-  background: #211;
-}
-
-.orange {
-  background: #221; 
-}
-
-.yellow {
-  background: #121;
-}
-
 .green {
   background: #122;
+}
+
+.green h2 {
+  color: #122;
 }
 
 .blue {
   background: #112;
 }
 
-.purple {
-  background: #212;
+.blue h2 {
+  color: #112;
 }
 
 .black {
@@ -174,9 +191,7 @@ a:hover {
 
 strong, b {
   color: black;
-}
-
-.quadrant {
+}.quadrant {
   position: fixed;
   height: 100%;
   width: 50%;
@@ -206,41 +221,4 @@ strong, b {
 .quadrant a:hover {
   font-weight: 400;
   color: #fff;
-}
-
-/* other pages */
-
-#nav-box {
-  height: 100px;
-  width: 24%;
-  top: -12%;
-  right: -24%;
-  position: absolute;
-  z-index: 1;
-  color: #def;
-}
-
-#nav-box:hover {
-  color: #fff;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-#nav-box-overlay {
-  height: 12%;
-  width: 24%;
-  top: 0%;
-  right: 0%;
-  position: absolute;
-  z-index: 0;
-  background-color: black;
-  opacity: 0;
-}
-
-.quadrant-nav {
-  position:absolute;
-  height: 50%;
-  width: 50%;
-  text-align: center;
-  line-height: 47px;
 }
