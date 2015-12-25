@@ -24,11 +24,9 @@ var colorID = 0;
 var colorArray = ["white", "red", "orange", "yellow", "green", "blue", "purple", "black"];
 
 $(".box").on("click", function() {
-  $(".box").removeClass(colorArray[colorID]);
-
   if (++colorID > colorArray.length - 1) {
     colorID = 0;
   }
   
-  $(".box").addClass(colorArray[colorID]);
+  $(".box").animate({"background-color": jQuery.Color(colorArray[colorID])}, 500);
 });
