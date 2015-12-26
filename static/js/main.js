@@ -1,45 +1,36 @@
 // Created by Hari Ganesan 3/28/14
 // main.js for website
-var qArray = ["q-left", "q-right"];
-var colors = {"q-left": "green", "q-right": "blue"};
-var homeLinkClicked = false;
+
+var colors = {
+  "mobile": "#422",
+  "games": "#231",
+  "web": "#124",
+  "about": "#ffa"
+};
 
 $(document).ready(function() {
-  $(".homeLink").css({"display": "none"});
-  $(".homeLink").fadeIn(500);
+  $(".planet").css({"display": "none"});
+  $("#planet-mobile").fadeIn(400, function() {
+    $("#planet-games").fadeIn(400, function() {
+      $("#planet-web").fadeIn(400, function() {
+        $("#planet-about").fadeIn(400);
+      });
+    });
+  });
 })
 
-$(".homeLink").hover(function() {
-    $(this).parent().addClass(colors[$(this).parent()[0].id]);
-    $(this).parent().addClass("hover");
+$(".planet").hover(function() {
+  $("body").animate({"background-color": jQuery.Color(colors[this.id.slice(7)])}, 600);
+  $(this).animate({"background-color": jQuery.Color("#333")}, 600);
 }, function() {
-    if (!homeLinkClicked) {
-      $(this).parent().removeClass(colors[$(this).parent()[0].id]);
-      $(this).parent().removeClass("hover");
-    }
+  $("body").animate({"background-color": jQuery.Color("#111")}, 600);
+  $(this).animate({"background-color": jQuery.Color("#555")}, 600);
 });
 
-$(".homeLink").click(function() {
-  for (var i = 0; i < 4; i++) {
-    if ($(this).parent().attr("id") !== qArray[i]) {
-      moveElement(qArray[i]);
-    }
+$(".planet").click(function() {
+  if ($(this).hasClass("click")) {
+    $(this).removeClass("click");
+  } else {
+    $(this).addClass("click");    
   }
-  homeLinkClicked = true;
-  $(this).delay(1000).fadeOut(300);
-  $(this).parent().delay(600)
-    .animate({width: '100%', height: '100%', top: '0%', left: '0%'}, 600);
-  var target = $(this).attr("data-target");
-  setTimeout(function() {
-    window.location = target;
-  }, 2000);
-  // document.getElementById("link-" + $(this).attr("data-target")).click();
 });
-
-function moveElement(elementID) {
-  if (elementID === "q-left") {
-    $("#" + elementID).animate({left: '-=1000'}, 800);
-  } else if (elementID === "q-right") {
-    $("#" + elementID).animate({left: '+=1000'}, 800);
-  }
-};
