@@ -2,7 +2,6 @@
 # main file for fried-python
 
 import os
-
 from google.appengine.ext.webapp import template
 import webapp2
 
@@ -11,21 +10,6 @@ import webapp2
 class MainPageHandler(webapp2.RequestHandler):
     def get(self):
         spitPath(self, "templates/index.html")
-
-
-class PortfolioPageHandler(webapp2.RequestHandler):
-    def get(self):
-        spitPath(self, "templates/portfolio.html")
-
-
-class AboutPageHandler(webapp2.RequestHandler):
-    def get(self):
-        spitPath(self, "templates/about.html")
-
-
-class ColorsPageHandler(webapp2.RequestHandler):
-    def get(self):
-        spitPath(self, "templates/colors.html")
 
 
 class NotFoundPageHandler(webapp2.RequestHandler):
@@ -41,8 +25,5 @@ def spitPath(self, path):
 
 app = webapp2.WSGIApplication([
     ('/', MainPageHandler),
-    ('/portfolio', PortfolioPageHandler),
-    ('/about', AboutPageHandler),
-    ('/colors', ColorsPageHandler),
     ('/.*$', NotFoundPageHandler)
 ], debug=True)

@@ -1,4 +1,4 @@
 fried-python
 ============
 
-Website running Django on GAE
+Website using GAE with some fun jQuery stuff
