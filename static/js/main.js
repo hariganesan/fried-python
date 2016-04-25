@@ -3,7 +3,7 @@ var windowWidth = 0;
 var windowHeight = 0;
 
 var roles = [
-  "a co-founder", "an entrepeneur", "a developer", "a product guy", "not a ninja"
+  "a co-founder", "an entrepreneur", "a developer", "a product guy", "not a ninja"
 ];
 
 var getRandomColor = function() {
